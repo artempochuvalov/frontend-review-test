@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- Во всех компонентах используется props currenсy, 
+    поэтому логичнее вынести в менеджер состояний, чтобы обеспечить расширяемость приложения -->
     <Header :cart="cart" :currency="currency"></Header>
     <List :currency="currency"/>
     <Cart :cart="cart"/>
